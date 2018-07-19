@@ -8,7 +8,7 @@ pygame.init() #initiate pygame and all the modules present within it
 crash_sound = pygame.mixer.Sound("F:/car race game/music/Crash.wav")
 pygame.mixer.music.load("F:/car race game/music/Race_Car.wav")
 click_sound = pygame.mixer.Sound("F:/car race game/music/button-3.wav")
-key_sound = pygame.mixer.Sound("F:/car race game/music/left.wav")
+
 #setting the screen dimensions
 display_width = 600
 display_height = 400
@@ -235,7 +235,7 @@ def game_Logic():
                                
 
             if event.type == pygame.KEYDOWN:
-                pygame.mixer.Sound.play(key_sound)
+                
                 if event.key == pygame.K_LEFT:
                     x_move = -5
                 if event.key == pygame.K_RIGHT:
